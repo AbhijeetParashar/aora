@@ -46,11 +46,16 @@ const SignUp = () => {
             minHeight: Dimensions.get("window").height - 100,
           }}
         >
-          <Image
-            source={images.logo}
-            resizeMode="contain"
-            className="w-[115px] h-[34px]"
-          />
+          <View className="relative flex flex-row gap-4 items-center">
+            <Image
+              source={images.logo}
+              resizeMode="contain"
+              className="w-[115px] h-[34px]"
+            />
+            <Text className="text-white font-medium opacity-50 italic">
+              Made By - Abhijeet Kumar ™
+            </Text>
+          </View>
 
           <Text className="text-2xl font-semibold text-white mt-10 font-psemibold">
             Sign Up to Aora
